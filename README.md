@@ -23,6 +23,9 @@ or
 
 ```typescript
 // ---------- ContextProvider.tsx
+import {createContext, type PropsWithChildren, useState} from "react";
+import {useSafeContext} from 'use-safe-context'
+
 // the initial value of the context should be undefined
 const CounterCtx = createContext<number | undefined>(undefined);
 
@@ -38,6 +41,8 @@ export default function ContextProvider({children}: PropsWithChildren) {
 }
 
 // ---------- ConsumerComponent.tsx
+import {useCounter} from "./ContextProvider.tsx";
+
 export default function ConsumerComponent() {
   // this will throw an error if the ConsumerComponent is used outside the ContextProvider
   const counter = useCounter();
