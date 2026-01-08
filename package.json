@@ -1,6 +1,6 @@
 {
   "name": "use-safe-context",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React hook that lets you consume a context only within its provider, it throws an error otherwise",
   "keywords": [
     "react",
