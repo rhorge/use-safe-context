@@ -2,7 +2,7 @@
 import { Context, use , useContext } from 'react';
 
 
-const useHook = use ?? useContext;
+const useHook = use === undefined ? useContext : use;
 
 /**
  * A React hook that lets you consume a context only within its provider, it throws an error otherwise.
