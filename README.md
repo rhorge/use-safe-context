@@ -22,7 +22,7 @@ or
 ## Usage
 
 ```typescript
-// ---------- ContextProvider.txt
+// ---------- ContextProvider.tsx
 // the initial value of the context should be undefined
 const CounterCtx = createContext<number | undefined>(undefined);
 
@@ -37,7 +37,7 @@ export default function ContextProvider({children}: PropsWithChildren) {
   return <CounterCtx.Provider value={counter}>{children}</CounterCtx.Provider>;
 }
 
-// ---------- ConsumerComponent.txt
+// ---------- ConsumerComponent.tsx
 export default function ConsumerComponent() {
   // this will throw an error if the ConsumerComponent is used outside the ContextProvider
   const counter = useCounter();

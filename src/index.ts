@@ -10,7 +10,7 @@ const useHook = use ?? useContext;
  * Uses the "use" hook behind the scenes if it is available, if not it falls back to useContext
  *
  * @example
- * // ---------- ContextProvider.txt
+ * // ---------- ContextProvider.tsx
  * // the initial value of the context should be undefined
  * const CounterCtx = createContext<number | undefined>(undefined);
  *
@@ -25,7 +25,7 @@ const useHook = use ?? useContext;
  *   return <CounterCtx.Provider value={counter}>{children}</CounterCtx.Provider>;
  * }
  *
- * // ---------- ConsumerComponent.txt
+ * // ---------- ConsumerComponent.tsx
  * export default function ConsumerComponent() {
  *   // this will throw an error if the ConsumerComponent is used outside the ContextProvider
  *   const counter = useCounter();
