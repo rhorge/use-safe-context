@@ -1,3 +1,6 @@
+## 1.0.7 (Jan 8, 2026)
+- Add CHANGELOG.md to exported files
+
 ## 1.0.6 (Jan 8, 2026)
 - Add CHANGELOG.md
 
