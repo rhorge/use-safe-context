@@ -21,7 +21,7 @@ or
 
 ## Usage
 
-```typescript
+```typescript jsx
 // ---------- ContextProvider.tsx
 import {createContext, type PropsWithChildren, useState} from "react";
 import {useSafeContext} from 'use-safe-context'

@@ -38,7 +38,7 @@ const useHook = use ?? useContext;
  * }
  *
  * @param context - the context that you want to consume
- * Returns the exact same output as use or useContext
+ * @return the exact same output as use or useContext
  */
 export function useSafeContext<T>(context: Context<T | undefined>): T {
     const contextVal = useHook(context);
