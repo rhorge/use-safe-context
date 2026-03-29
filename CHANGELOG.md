@@ -1,3 +1,6 @@
+## 1.0.8 (Mar 29, 2026)
+- Inform the bundlers that the package does not have side effects
+
 ## 1.0.7 (Jan 8, 2026)
 - Add CHANGELOG.md to exported files
 
